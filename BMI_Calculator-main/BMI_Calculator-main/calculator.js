@@ -54,19 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return { bmi, minBMI, maxBMI };
         }
 
-        // Imperial BMI Calculation
-        calculateImperial() {
-            const imperFt = (this.height.ft * 30.48) / 100;
-            const imperIn = (this.height.in * 2.54) / 100;
-            const imperSt = this.weight.st * 6.35;
-            const imperLbs = this.weight.lbs * 0.43;
-            const imperW = imperSt + imperLbs;
-            const imperH = imperFt + imperIn;
-            const bmi = imperW / (imperH * imperH);
-            const minBMI = 18.5 * (imperH * imperH) / 6.35;
-            const maxBMI = 24.9 * (imperH * imperH) / 6.35;
-            return { bmi, minBMI, maxBMI };
-        }
     }
 
     // Event Listeners for inputs and radio buttons
@@ -122,21 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const { bmi, minBMI, maxBMI } = bmiCalculator.calculateMetric();
                 displayResults(bmi, minBMI, maxBMI);
             }
-       /* } else if (system === 'imperial') {
-            const heightFt = parseFloat(heightFtInput.value);
-            const heightIn = parseFloat(heightInInput.value);
-            const weightSt = parseFloat(weightStInput.value);
-            const weightLbs = parseFloat(weightLbsInput.value);
-            if (!isNaN(heightFt) && !isNaN(weightSt) && !isNaN(heightIn) && !isNaN(weightLbs)) {
-                bmiCalculator = BMI.createFromSystem('imperial', {
-                    ft: heightFt,
-                    in: heightIn,
-                    st: weightSt,
-                    lbs: weightLbs,
-                });
-                const { bmi, minBMI, maxBMI } = bmiCalculator.calculateImperial();
-                displayResults(bmi, minBMI, maxBMI);
-            }*/
         }
 
         // Demonstration of the copy constructor
