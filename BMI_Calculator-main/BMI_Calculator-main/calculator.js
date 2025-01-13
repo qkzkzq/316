@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const maxBMI = 24.9 * (meters * meters);
             return { bmi, minBMI, maxBMI };
         }
-
     }
 
     // Event Listeners for inputs and radio buttons
