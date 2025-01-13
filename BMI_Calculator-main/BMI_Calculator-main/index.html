@@ -16,7 +16,7 @@
     <div class="wrapper">
       <div class="hero_wrap">
         <div class="hero_intro">
-          <img src="./images/LOGO.png" alt="" width="80" height="80" />
+          <img src="./images/LOGO.png" alt="" width="100" height="100" />
           <h1>Body Mass<br />Index Calculator</h1>
           <p>
             Body mass index or BMI gives an indication of your body size.
@@ -42,18 +42,6 @@
                   <span></span>
                 </label>
               </div>
-              <div>
-                <label for="imperial" class="radio_wrap">
-                  <input
-                    type="radio"
-                    name="method"
-                    id="imperial"
-                    value="imperial"
-                  />
-                  <!-- Imperial
-                  <span></span> -->
-                </label>
-              </div>
             </div>
             <div class="stats">
               <div>
@@ -77,60 +65,30 @@
                 <p class="kg">kg</p>
               </div>
             </div>
-            <!-- <div class="stats_imperial">
-              <div>
-                <label for="height_ft">Height</label>
-                <input
-                  type="number"
-                  name="height_ft"
-                  id="height_ft"
-                  placeholder="0"
-                />
-                <p class="ft">ft</p>
-              </div>
-              <div>
-                <input
-                  type="number"
-                  name="height_in"
-                  id="height_in"
-                  placeholder="0"
-                />
-                <p class="in">in</p>
-              </div>
-              <div>
-                <label for="weight">Weight</label>
-                <input
-                  type="number"
-                  name="weight_st"
-                  id="weight_st"
-                  placeholder="0"
-                />
-                <p class="st">st</p>
-              </div>
-              <div>
-                <input
-                  type="number"
-                  name="weight_lbs"
-                  id="weight_lbs"
-                  placeholder="0"
-                />
-                <p class="lbs">lbs</p>
-              </div>
-            </div> -->
           </form>
-          <div class="result_output">
+          <div class="result_output"> 
             <div class="wrap_result">
-              <p id="welcome">Welcome!</p>
-              <p id="top_bmi">Your BMI is...</p>
-              <p id="result"></p>
-              <p id="welcome_more">
-                Enter your height and weight to see your BMI result
-              </p>
+                <p id="welcome">Welcome!</p>
+                <p id="top_bmi">Your BMI is...</p>
+                <p id="result"></p>
+                <p id="welcome_more">
+                    Enter your height and weight to see your BMI result
+                </p>
             </div>
-            <p id="ideal_bmi_info"></p>
-          </div>
+            <p id="ideal_bmi_info"></p> <!-- Section for displaying BMI results -->
+        </div>
+        
+        <div class="recommendations_output">
+            <p id="recommendations_title">Personalized Recommendations:</p> <!-- Section title -->
+            <div id="recommendations_section">Tips and tricks on how to to tackle your lifestyle</div> <!-- Section for displaying recommendations -->
+        </div>        
         </div>
       </div>
+      <div>  <img
+        src="./images/white.png"
+        width="5"
+        height="60"
+      /></div>
       <div class="means_wrap">
         <div class="img_wrap">
           <img
@@ -138,6 +96,12 @@
             alt="man"
             width="580"
             height="533"
+          />
+          <img
+            src="./images/chart.png"
+        
+            width="580"
+            height="1533"
           />
         </div>
         
@@ -150,8 +114,7 @@
           <h1>Interpretation of Your BMI Result</h1>
           <p>
             A BMI <b>below 18.5 </b> is considered underweight, which may lead to 
-            a weaker immune system and nutrient deficiencies. 
-            Focus on a calorie-rich diet with healthy fats, proteins, and 
+            a weaker  a calorie-rich diet with healthy fats, proteins, and 
             whole grains, like avocados, nuts, dairy, and lean meats. Light exercises 
             like yoga or stretching can help improve muscle tone. Regular check-ups
              with a healthcare provider can ensure safe and healthy weight gain.

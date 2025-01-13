@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
   --White: #fff;
@@ -65,13 +64,13 @@ input[type="number"]::-webkit-outer-spin-button {
 .hero_wrap .bmi_calculator {
   height: auto;
   box-sizing: border-box;
-  padding: 32px;
-  border-radius: 16px;
+  padding: 50px;
+  border-radius: 100px;
   background: var(--White);
   position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 82%;
+  z-index: 27;
+  top: 55%;
+  left: 92%;
   transform: translate(-18%, -50%);
   box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 }
@@ -221,84 +220,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .hero_wrap .bmi_calculator form .stats div input:hover {
   border: 1px solid var(--Blue);
 }
-.hero_wrap .bmi_calculator form .stats_imperial {
-  display: none;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 24px;
-  margin-bottom: 32px;
-  position: relative;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div label {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 150%;
-  color: #5e6e85;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div input {
-  padding: 20px 24px;
-  border-radius: 12px;
-  border: 1px solid #d8e2e7;
-  box-shadow: none;
-  outline: 0;
-  font-size: 24px;
-  font-weight: 600;
-  max-width: 238px;
-  color: var(--Gunmetal);
-  transition: border 0.3s ease;
-  box-sizing: border-box;
-  margin-top: 8px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div #height_in {
-  margin-top: 28px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div .ft {
-  position: absolute;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--Blue);
-  line-height: normal;
-  letter-spacing: -1.2px;
-  top: 48px;
-  left: 190px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div .in {
-  position: absolute;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--Blue);
-  line-height: normal;
-  letter-spacing: -1.2px;
-  top: 48px;
-  left: 460px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div #weight_lbs {
-  margin-top: 28px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div .st {
-  position: absolute;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--Blue);
-  line-height: normal;
-  letter-spacing: -1.2px;
-  top: 172px;
-  left: 190px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div .lbs {
-  position: absolute;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--Blue);
-  line-height: normal;
-  letter-spacing: -1.2px;
-  top: 172px;
-  left: 450px;
-}
-.hero_wrap .bmi_calculator form .stats_imperial div input:focus,
-.hero_wrap .bmi_calculator form .stats_imperial div input:hover {
-  border: 1px solid var(--Blue);
-}
 .hero_wrap .bmi_calculator .result_output {
   max-width: 100%;
   display: flex;
@@ -306,15 +227,15 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 32px;
   align-items: center;
   background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
-  border-radius: 156px 999px 999px 156px;
+  border-radius: 200px 999px 999px 200px;
 }
 .hero_wrap .bmi_calculator .result_output .wrap_result #welcome {
   color: var(--White);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -1.2px;
   line-height: normal;
-  margin-bottom: 16px;
+  margin-bottom: 1px;
 }
 .hero_wrap .bmi_calculator .result_output .wrap_result{
   max-width: 100%;
@@ -346,9 +267,50 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
-  margin-left: 98px;
+  margin-left: 20px;
   color: var(--White);
 }
+/* Recommendations Section */
+.hero_wrap .bmi_calculator .recommendations_output {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: center;
+  background: linear-gradient(90deg, #60b7ff 0%, #3e51fa 100%); /* Adjusted gradient for recommendations */
+  border-radius: 200px 999px 999px 200px;
+  margin-top: 20px; /* Adds space between the BMI result section and recommendations */
+}
+
+/* Title for Recommendations */
+.hero_wrap .bmi_calculator .recommendations_output #recommendations_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--White);
+  letter-spacing: -1.2px;
+  margin-bottom: 16px;
+  line-height: normal;
+}
+
+/* Recommendations Content */
+.hero_wrap .bmi_calculator .recommendations_output #recommendations_section {
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--White);
+  line-height: 150%;
+  text-align: left; /* Centers the recommendations text */
+}
+
+/* Recommendation Paragraph */
+.hero_wrap .bmi_calculator .recommendations_output #recommendations_section p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--White);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
 .means_wrap {
   margin: 0 24px;
   padding: 50px 116px;
@@ -663,9 +625,6 @@ input[type="number"]::-webkit-outer-spin-button {
     left: 200px;
     top: 172px;
   }
-  .hero_wrap .bmi_calculator form .stats_imperial{
-    gap: 16px;
-  }
   .hero_wrap .bmi_calculator form .stats_imperial div input[type='number']{
     max-width: 119px;
   }
@@ -680,20 +639,6 @@ input[type="number"]::-webkit-outer-spin-button {
   .hero_wrap .bmi_calculator .result_output .wrap_result #result{
     text-align: left;
     margin-bottom: 24px;
-  }
-  .hero_wrap .bmi_calculator form .stats_imperial div .ft {
-    left: 80px;
-  }
-  .hero_wrap .bmi_calculator form .stats_imperial div .in{
-    left: 210px;
-  }
-  .hero_wrap .bmi_calculator form .stats_imperial div .st {
-    top: 165px;
-    left: 80px;
-  }
-  .hero_wrap .bmi_calculator form .stats_imperial div .lbs {
-    top: 165px;
-    left: 210px;
   }
   .hero_wrap .bmi_calculator .result_output #ideal_bmi_info{
     margin-left: 0;
