@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="32" fill="#FFC0CB" />
+  
+  <!-- Smaller Face Circle -->
+  <circle cx="32" cy="32" r="20" fill="#FFC0CB" stroke="red" stroke-width="2" />
+  
+  <!-- Smaller Eyes -->
+  <circle cx="24" cy="24" r="3" fill="red" />
+  <circle cx="40" cy="24" r="3" fill="red" />
+  
+  <!-- Angry Eyebrows -->
+  <path d="M18 16c4-4 8 4 12 0" fill="none" stroke="red" stroke-width="2" />
+  <path d="M46 16c-4-4-8 4-12 0" fill="none" stroke="red" stroke-width="2" />
+  
+  <!-- Angry Mouth -->
+  <path d="M20 40c8-4 16-4 20 0" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" />
+</svg>
